@@ -3,77 +3,197 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Website: Joshua Angara</title>
+  <title> Natassha Cua | Portfolio</title>
+
+  <!-- Connect this HTML file to style.css -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- HEADER + NAVIGATION -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="logo" href="#home">YN.</a>
 
-  <!-- Header -->
-  <header>
-    <h1>Joshua Angara's Portfolio</h1>
-    <p class="tagline">Aspiring Web Developer</p>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- Main Content -->
   <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Hello! I am learning HTML, CSS, and JavaScript. 
-        This is my first personal portfolio website.
-      </p>
+    <!-- HERO / HOME SECTION -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">HELLO, I AM</p>
+        <h1>Natassha</h1>
+        <h2>Aspiring Web Developer</h2>
+        <p class="hero-text">
+          I am learning how to build simple, responsive, and interactive
+          websites using HTML, CSS, and JavaScript.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button primary-button" href="#projects">View My Projects</a>
+          <button id="helloButton" class="button secondary-button" type="button">
+            Say Hello
+          </button>
+        </div>
+
+        <p id="helloMessage" class="hello-message" aria-live="polite"></p>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="project-container">
-        <div class="project-card">
-          <h3>Project 1</h3>
-          <p>My first webpage</p>
-        </div>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section-label">01 / ABOUT</p>
+        <h2 class="section-title">About Me</h2>
 
-        <div class="project-card">
-          <h3>Project 2</h3>
-          <p>HTML Form Project</p>
-        </div>
+        <div class="about-grid">
+          <div class="profile-card" aria-hidden="true">
+            <div class="profile-placeholder">YN</div>
+          </div>
 
-        <div class="project-card">
-          <h3>Project 3</h3>
-          <p>My CSS layout exercises</p>
+          <div>
+            <p>
+              Hi! I am <strong>Your Name</strong>. I am currently learning web
+              development and enjoy turning ideas into websites that are easy
+              to use and understand.
+            </p>
+            <p>
+              My current focus is front-end development: using HTML for
+              structure, CSS for design, and JavaScript for interaction.
+            </p>
+            <p>
+              Outside coding, I enjoy <strong>your hobby here</strong> and I am
+              always interested in learning something new.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section alt-section">
+      <div class="container">
+        <p class="section-label">02 / SKILLS</p>
+        <h2 class="section-title">What I Am Learning</h2>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <div class="card-grid">
+          <article class="card">
+            <h3>HTML</h3>
+            <p>Page structure, headings, paragraphs, links, forms, and semantic elements.</p>
+          </article>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+          <article class="card">
+            <h3>CSS</h3>
+            <p>Colors, spacing, the box model, Flexbox, responsive layouts, and hover effects.</p>
+          </article>
 
-        <button type="submit">Send</button>
-        <p id="formMessage"></p>
-      </form>
+          <article class="card">
+            <h3>JavaScript</h3>
+            <p>Variables, functions, conditionals, DOM manipulation, and event listeners.</p>
+          </article>
+
+          <article class="card">
+            <h3>Git & GitHub</h3>
+            <p>Saving code changes, creating repositories, and sharing projects online.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section-label">03 / PROJECTS</p>
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-number">01</div>
+            <h3>Portfolio Website</h3>
+            <p>
+              A personal website that introduces who I am, what I am learning,
+              and the projects I have completed.
+            </p>
+            <p class="project-tech">HTML • CSS • JavaScript</p>
+            <a href="#" class="text-link">Project link →</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <h3>Simple Landing Page</h3>
+            <p>
+              A one-page website for a product, service, school activity, or event.
+            </p>
+            <p class="project-tech">HTML • CSS</p>
+            <a href="#" class="text-link">Project link →</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <h3>JavaScript Mini Project</h3>
+            <p>
+              A small interactive project such as a counter, quiz, greeting app,
+              or simple to-do list.
+            </p>
+            <p class="project-tech">HTML • CSS • JavaScript</p>
+            <a href="#" class="text-link">Project link →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label">04 / CONTACT</p>
+          <h2 class="section-title">Let's Connect</h2>
+          <p>
+            You can replace the sample details below with your real email,
+            GitHub, and LinkedIn links.
+          </p>
+
+          <ul class="contact-list">
+            <li>Email: youremail@example.com</li>
+            <li>GitHub: github.com/yourusername</li>
+            <li>LinkedIn: linkedin.com/in/yourusername</li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+          <button class="button primary-button" type="submit">Send Message</button>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Joshua Angara. All rights reserved.</p>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name. Built with HTML, CSS & JavaScript.</p>
+    </div>
   </footer>
 
+  <!-- Connect this HTML file to script.js -->
   <script src="script.js"></script>
 </body>
 </html>
